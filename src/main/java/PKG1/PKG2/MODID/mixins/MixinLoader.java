@@ -1,4 +1,3 @@
-package PKG1.PKG2.MODID.mixins;
 package <MODPACKAGE>.<MODID>.mixins;
 
 import net.minecraftforge.fml.relauncher.IFMLLoadingPlugin;

@@ -1,4 +1,3 @@
-package PKG1.PKG2.MODID;
 package <MODPACKAGE>.<MODID>;
 
 import lombok.Getter;
@@ -14,8 +13,8 @@ import net.minecraftforge.fml.common.Mod;
 
 @Setter
 public class McMod {
-    public static final String MOD_ID = "<MODNAME>";
-    public static final String NAME = "<FULLMODNAME>";
+    public static final String MOD_ID = "<MODID>";
+    public static final String NAME = "<MODNAME>";
     public static final String VERSION = "<MODVERSION>";
 
 
