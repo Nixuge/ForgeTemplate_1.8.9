@@ -1,0 +1,10 @@
+{
+  "compatibilityLevel": "JAVA_8",
+  "package": "me.nixuge.<MODID>.mixins",
+  "refmap": "refmap.<MODID>.json",
+  "mixins": [],
+  "client": [
+    "<set your mixins here, under the mixins/ folder>"
+  ],
+  "server": []
+}
