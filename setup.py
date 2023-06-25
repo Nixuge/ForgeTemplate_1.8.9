@@ -2,8 +2,6 @@
 
 import shutil
 
-## UNFINISHED
-
 def replace_in_file(filepath: str, to_replace: str, replacement: str):
     with open(filepath, 'r') as file:
         filedata = file.read()
