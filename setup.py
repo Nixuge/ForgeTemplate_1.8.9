@@ -1,5 +1,6 @@
 #!/bin/python3
 
+import os
 import shutil
 
 def replace_in_file(filepath: str, to_replace: str, replacement: str):
@@ -16,6 +17,12 @@ print("ForgeTemplate Setup")
 MCMOD = "src/main/java/PKG1/PKG2/MODID/McMod.java"
 MIXINLOADER = "src/main/java/PKG1/PKG2/MODID/mixins/MixinLoader.java"
 MIXINJSON = "src/main/resources/mixins.MODID.json"
+
+try:
+    os.rmdir(".git")
+    print("Git folder removed")
+except:
+    print("Git folder already removed")
 
 package = input("Enter your mod package (eg. me.nixuge): ")
 pkg1, pkg2 = package.split('.')
