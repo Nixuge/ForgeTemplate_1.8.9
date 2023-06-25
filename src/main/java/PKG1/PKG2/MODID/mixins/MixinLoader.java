@@ -1,11 +1,12 @@
-package me.nixuge.MODNAME.mixins;
+package PKG1.PKG2.MODID.mixins;
+package <MODPACKAGE>.<MODID>.mixins;
 
 import net.minecraftforge.fml.relauncher.IFMLLoadingPlugin;
 import org.spongepowered.asm.launch.MixinBootstrap;
 import org.spongepowered.asm.mixin.MixinEnvironment;
 import org.spongepowered.asm.mixin.Mixins;
 
-import me.nixuge.MODNAME.McMod;
+import <MODPACKAGE>.<MODID>.McMod;
 
 import java.util.Map;
 

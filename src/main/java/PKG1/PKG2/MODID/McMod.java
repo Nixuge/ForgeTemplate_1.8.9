@@ -1,4 +1,5 @@
-package me.nixuge.MODNAME;
+package PKG1.PKG2.MODID;
+package <MODPACKAGE>.<MODID>;
 
 import lombok.Getter;
 import lombok.Setter;

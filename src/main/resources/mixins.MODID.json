@@ -1,6 +1,6 @@
 {
   "compatibilityLevel": "JAVA_8",
-  "package": "me.nixuge.<MODID>.mixins",
+  "package": "<MODPACKAGE>.<MODID>.mixins",
   "refmap": "refmap.<MODID>.json",
   "mixins": [],
   "client": [
