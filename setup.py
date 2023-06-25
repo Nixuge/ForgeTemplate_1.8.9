@@ -60,7 +60,7 @@ replace_in_file("gradle.properties", "<MODAUTHOR>", author)
 replace_in_file("gradle.properties", "<MODDESCRIPTION>", description)
 
 # link
-replace_in_file("gradle.properties", "<MODLINK>", link)
+replace_in_file("src/main/resources/mcmod.info", "<MODLINK>", link)
 
 # rename 1 by 1 to not have to delete folders after lol
 shutil.move("src/main/java/PKG1/PKG2/MODID", f"src/main/java/PKG1/PKG2/{id}") 
