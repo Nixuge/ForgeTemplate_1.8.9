@@ -18,12 +18,12 @@ MCMOD = "src/main/java/PKG1/PKG2/MODID/McMod.java"
 MIXINLOADER = "src/main/java/PKG1/PKG2/MODID/mixins/MixinLoader.java"
 MIXINJSON = "src/main/resources/mixins.MODID.json"
 
-try:
-    if not os.path.isfile("dev"):
-        os.rmdir(".git")
+if not os.path.isfile("dev"):
+    if os.path.isdir(".git"):
+        shutil.rmtree(".git")
         print("Git folder removed")
-except:
-    print("Git folder already removed")
+    else:
+        print("Git folder already removed")
 
 package = input("Enter your mod package (eg. me.nixuge): ")
 pkg1, pkg2 = package.split('.')
@@ -74,7 +74,3 @@ shutil.move("src/main/java/PKG1/PKG2", f"src/main/java/PKG1/{pkg2}")
 shutil.move("src/main/java/PKG1", f"src/main/java/{pkg1}") 
 
 shutil.move("src/main/resources/mixins.MODID.json", f"src/main/resources/mixins.{id}.json") 
-
-#package
-
-
