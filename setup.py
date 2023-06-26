@@ -19,8 +19,9 @@ MIXINLOADER = "src/main/java/PKG1/PKG2/MODID/mixins/MixinLoader.java"
 MIXINJSON = "src/main/resources/mixins.MODID.json"
 
 try:
-    os.rmdir(".git")
-    print("Git folder removed")
+    if not os.path.isfile("dev"):
+        os.rmdir(".git")
+        print("Git folder removed")
 except:
     print("Git folder already removed")
 
