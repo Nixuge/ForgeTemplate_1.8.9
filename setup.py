@@ -71,4 +71,7 @@ shutil.move("src/main/java/PKG1/PKG2/MODID", f"src/main/java/PKG1/PKG2/{id}")
 shutil.move("src/main/java/PKG1/PKG2", f"src/main/java/PKG1/{pkg2}") 
 shutil.move("src/main/java/PKG1", f"src/main/java/{pkg1}") 
 
-shutil.move("src/main/resources/mixins.MODID.json", f"src/main/resources/mixins.{id}.json") 
+shutil.move("src/main/resources/mixins.MODID.json", f"src/main/resources/mixins.{id}.json")
+
+if input("Try to delete this script? (y/n)").lower() in ['y', "yes"]:
+    os.remove("setup.py")
