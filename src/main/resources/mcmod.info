@@ -5,7 +5,7 @@
   "description": "${mod_description}",
   "version": "${version}",
   "mcversion": "${mcversion}",
-  "url": "<MODLINK>",
+  "url": "${mod_url}",
   "updateUrl": "",
   "authorList": ${mod_author},
   "credits": "",

@@ -55,17 +55,15 @@ for file in ("gradle.properties", MCMOD):
 for file in ("gradle.properties", MCMOD):
     replace_in_file(file, "<MODVERSION>", version)
 
-# author
-replace_in_file("gradle.properties", "<MODAUTHOR>", author)
+gradleproperties_only = {
+    "<MODAUTHOR>": author,
+    "<MODDESCRIPTION>": description,
+    "<MODLINK>": link,
+    "<DEVUSERNAME>": dev_username
+}
+for to_replace, replacement in gradleproperties_only.items():
+    replace_in_file("gradle.properties", to_replace, replacement)
 
-# description
-replace_in_file("gradle.properties", "<MODDESCRIPTION>", description)
-
-# link
-replace_in_file("src/main/resources/mcmod.info", "<MODLINK>", link)
-
-# dev username
-replace_in_file("gradle.properties", "<DEVUSERNAME>", dev_username)
 
 
 # rename 1 by 1 to not have to delete folders after lol
