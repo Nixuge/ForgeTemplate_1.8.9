@@ -73,9 +73,14 @@ shutil.move("src/main/java/PKG1", f"src/main/java/{pkg1}")
 
 shutil.move("src/main/resources/mixins.MODID.json", f"src/main/resources/mixins.{id}.json")
 
-# not sure if this works on windows
-if input("Try to delete this script? (y/n): ").lower() in ['y', "yes"]:
-    os.remove("setup.py")
+# readme
+with open("README.md", "w") as file:
+    file.write("# " + name + "\n")
+    file.write(description)
 
 if input("Run git init? (y/n): ").lower() in ['y', "yes"]:
     os.system("git init")
+
+# not sure if this works on windows
+if input("Try to delete this script? (y/n): ").lower() in ['y', "yes"]:
+    os.remove("setup.py")
